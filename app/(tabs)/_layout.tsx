@@ -24,14 +24,34 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="services"
         options={{
-          title: 'Explore',
+          title: 'Servicios',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'footsteps' : 'footsteps-outline'} color={color} />
           ),
         }}
       />
+      <Tabs.Screen
+        name="customers"
+        options={{
+          title: 'Clientes',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'folder-open' : 'folder-open-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: 'Contáctanos',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'chatbubbles' : 'chatbubbles-outline'} color={color} />
+          ),
+        }}
+      />
+
     </Tabs>
+    
   );
 }
